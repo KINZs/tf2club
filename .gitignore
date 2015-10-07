@@ -3,3 +3,4 @@
 settings.py
 etc
 node_modules
+*.log
