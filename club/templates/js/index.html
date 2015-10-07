@@ -1,0 +1,94 @@
+<nav class="navbar navbar-default navbar-static-top hidden-xs">
+  <div class="navbar-header">
+    <div class="container-fluid">
+      <div class="navbar-header hidden-lg hidden-md hidden-sm">
+      </div>
+    </div>
+  </div>
+  <!-- /.navbar-header -->
+  <ul class="nav navbar-top-links navbar-left hidden-xs">
+    <li>
+      <img src="/static/logo.png" style="margin-top: 9px" />
+    </li>
+  </ul>
+  <ul class="nav navbar-top-links navbar-right">
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" role="button">
+        <i class="fa fa-bell fa-lg"></i>
+        <i class="fa fa-circle text-info small icon-notification"></i>
+      </a>
+      <ul class="dropdown-menu dropdown-alerts">
+        <li class="dropdown-header">You Have 3 Notifications</li>
+        <li class="divider"></li>
+        <li>
+          <a href="index.html#">
+            <div>
+              <span>Package Sent...</span>
+              <span class="label label-warning pull-right">Warning</span>
+            </div>
+          </a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="index.html#">
+            <div>
+              <span>Warning! Overload Soon...</span>
+              <span class="label label-danger pull-right">Server Status</span>
+            </div>
+          </a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="index.html#">
+            <div>
+              <span>Front-end Developer Contract</span>
+              <span class="label label-success pull-right">Invitation</span>
+            </div>
+          </a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a class="text-center" href="index.html#">
+            See All Notifications
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- /.dropdown-alerts -->
+    </li>
+    <!-- /.dropdown -->
+    <li>
+      {% if window.user %}
+      <a class="nav-brand dropdown dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        <img src="/api/user/{{ window.user.id }}/avatar" class="img-circle avatar-height-20" alt="Menu"> <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="dropdown-header">Signed in as {{ window.user.nickname }}</li>
+        <li role="separator" class="divider"></li>
+        <li><a href="index.html#"><i class="fa fa-user margin-right-5"></i> Your Profile</a></li>
+        <li><a href="index.html#"><i class="fa fa-gear margin-right-5"></i> Settings</a></li>
+        <li><a href="index.html#"><i class="fa fa-question-circle margin-right-5"></i> Help</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="/auth/logout"><i class="fa fa-sign-out margin-right-5"></i> Sign Out</a>
+        </li>
+      </ul>
+      {% else %}
+      <a class="dropdown-toggle" data-toggle="dropdown" role="button">
+        <i class="fa fa-circle fa-lg"></i>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/auth/login">Login</a>
+      </ul>
+      {% endif %}
+    </li>
+  </ul>
+  <!-- /.navbar-top-links -->
+</nav>
+<div id="page-wrapper">
+  <h1 class="text-center margin-top-none">Welcome to TF2 Club</h1>
+  <p class="text-center text-muted">TF2 Club is a site for playing fun, competitive, and enjoyable pugs in Team Fortress 2.</p>
+  <div style='height: 1100px'></div>
+</div>
+<footer id="main_footer">
+  <p class="text-muted small"><span class="text-muted pull-right">made with <i class="fa fa-fw fa-heart text-danger"></i> by <a href="http://twitter.com/b1naryth1ef">b1nzy</a></span></p>
+</footer>

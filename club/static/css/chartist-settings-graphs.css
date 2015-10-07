@@ -1,0 +1,58 @@
+
+        /* 13.  Bi-Polar Bar Chart START*/
+        
+        #Bi-Polar-Bar-chart .ct-series-a .ct-bar {
+            stroke: #4f77a9 !important;
+        }
+        
+        #Bi-Polar-Bar-chart .ct-grid {
+            stroke: lightgrey !important;
+        }
+        
+        #Bi-Polar-Bar-chart .ct-label {
+            stroke: black !important;
+            font-size: 0.8em;
+        }
+        /* 13.  Bi-Polar Bar Chart END */
+        
+        #Bi-Polar-Line-Chart-with-Area-Only .ct-series-a .ct-area {
+            fill: #c0ddec !important;
+            fill-opacity: 0.5;
+        }
+        
+        #Bi-Polar-Line-Chart-with-Area-Only .ct-series-b .ct-area {
+            fill: #e5bbbd !important;
+            fill-opacity: 0.5;
+        }
+        
+        #Bi-Polar-Line-Chart-with-Area-Only .ct-series-c .ct-area {
+            fill: #b9d4c9 !important;
+            fill-opacity: 0.5;
+        }
+        
+        #Bi-Polar-Line-Chart-with-Area-Only .ct-series-d .ct-area {
+            fill: orange !important;
+            fill-opacity: 0.5;
+        }
+        
+        #Bi-Polar-Line-Chart-with-Area-Only .ct-grid {
+            stroke: lightgrey !important;
+        }
+        
+        #Bi-Polar-Line-Chart-with-Area-Only .ct-label {
+            stroke: black !important;
+            font-size: 0.8em;
+        }
+        
+        #stacked .ct-series-a .ct-bar {
+            stroke: #2d7caa;
+        }
+        
+        #stacked .ct-series-b .ct-bar {
+            stroke: #3caed0;
+        }
+        
+        #stacked .ct-series-c .ct-bar {
+            stroke: #c0ddec;
+        }
+ 

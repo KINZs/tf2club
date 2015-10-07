@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+import sys, os
+
+def run():
+    from app import app, fanny
+    fanny.load_views()
+    app.run(debug=True, port=4040, host="0.0.0.0")
+
+def db_reset():
+    from db import db, models
+
+    for model in models:
+        model.drop_table(True, True)
+        model.create_table()
+
+def db_create():
+    from db import db, models
+
+    for model in models:
+        model.create_table(True)
+
+def main(args):
+    if args[0] == "run":
+        return run()
+
+    if args[0] == "db":
+        if args[1] == "reset":
+            return db_reset()
+        elif args[1] == "create":
+            return db_create()
+
+    print "Usage: ./{} <...>".format(sys.argv[0])
+    print "  run - run the server and stuff"
+    print "  db reset - rebuild all models"
+    return 1
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+    args.extend([None] * 5)
+    sys.exit(main(args))
+

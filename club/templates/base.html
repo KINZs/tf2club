@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TF2 Pugs made easy">
+    <title>TF2 Club</title>
+
+    <link rel='stylesheet' href='/static/components/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/static/css/styles-theme.css'>
+    <link rel='stylesheet' href='/static/css/font-awesome.min.css'>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="clearfix">
+        <div id="main-content"></div>
+      </div>
+    </div>
+    {% if g.user %}
+    <script>
+    var user ={{ g.user.to_dict(g.user)|json|safe }};
+    </script>
+    {% endif %}
+    <script src='/static/components/jquery/dist/jquery.min.js'></script>
+    <script src='/static/components/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script src='/static/bundle.js'></script>
+  </body>
+</html>

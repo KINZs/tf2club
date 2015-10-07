@@ -1,0 +1,60 @@
+  #stacked .ct-series-a .ct-bar {
+            stroke: #2d7caa;
+        }
+        
+        #stacked .ct-series-b .ct-bar {
+            stroke: #3caed0;
+        }
+        
+        #stacked .ct-series-c .ct-bar {
+            stroke: #c0ddec;
+        }
+
+
+        
+        #gauge .ct-series-a .ct-slice-donut {
+            stroke: #2d7caa;
+        }
+        
+        #gauge .ct-series-b .ct-slice-donut {
+            stroke: #3caed0;
+        }
+        
+        #gauge .ct-series-c .ct-slice-donut {
+            stroke: #c0ddec;
+        }
+        
+        #gauge .ct-series-d .ct-slice-donut {
+            stroke: #b5bec5;
+        }
+
+        /* Animating a Donut with Svg.animate  START */
+        
+        #gauge-animated .ct-series-a .ct-slice-donut {
+            stroke: #da95b0;
+        }
+        
+        #gauge-animated .ct-series-b .ct-slice-donut {
+            stroke: #df8a60;
+        }
+        
+        #gauge-animated .ct-series-c .ct-slice-donut {
+            stroke: #ac5d75;
+        }
+        
+        #gauge-animated .ct-series-d .ct-slice-donut {
+            stroke: #7fb864;
+        }
+        
+        #gauge-animated .ct-series-e .ct-slice-donut {
+            stroke: #92b8a4;
+        }
+        
+        #gauge-animated .ct-series-f .ct-slice-donut {
+            stroke: #78659c;
+        }
+        
+        #gauge-animated .ct-series-g .ct-slice-donut {
+            stroke: #c55a5a;
+        }
+        /* Animating a Donut with Svg.animate END */

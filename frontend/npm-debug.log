@@ -1,0 +1,60 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '/home/andrei/code/js/que' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ '/home/andrei/code/js/que', null ]
+6 verbose cache add name=undefined spec="/home/andrei/code/js/que" args=["/home/andrei/code/js/que",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '/home/andrei/code/js/que',
+7 verbose parsed url   path: '/home/andrei/code/js/que',
+7 verbose parsed url   href: '/home/andrei/code/js/que' }
+8 silly lockFile 8fdc93b6-home-andrei-code-js-que /home/andrei/code/js/que
+9 verbose lock /home/andrei/code/js/que /home/andrei/.npm/8fdc93b6-home-andrei-code-js-que.lock
+10 verbose tar pack [ '/home/andrei/.npm/que/0.0.1/package.tgz',
+10 verbose tar pack   '/home/andrei/code/js/que' ]
+11 verbose tarball /home/andrei/.npm/que/0.0.1/package.tgz
+12 verbose folder /home/andrei/code/js/que
+13 info prepublish que@0.0.1
+14 silly lockFile 377db3f5-tar-home-andrei-code-js-que tar:///home/andrei/code/js/que
+15 verbose lock tar:///home/andrei/code/js/que /home/andrei/.npm/377db3f5-tar-home-andrei-code-js-que.lock
+16 silly lockFile 46d9a854-andrei-npm-que-0-0-1-package-tgz tar:///home/andrei/.npm/que/0.0.1/package.tgz
+17 verbose lock tar:///home/andrei/.npm/que/0.0.1/package.tgz /home/andrei/.npm/46d9a854-andrei-npm-que-0-0-1-package-tgz.lock
+18 silly lockFile 377db3f5-tar-home-andrei-code-js-que tar:///home/andrei/code/js/que
+19 silly lockFile 377db3f5-tar-home-andrei-code-js-que tar:///home/andrei/code/js/que
+20 silly lockFile 46d9a854-andrei-npm-que-0-0-1-package-tgz tar:///home/andrei/.npm/que/0.0.1/package.tgz
+21 silly lockFile 46d9a854-andrei-npm-que-0-0-1-package-tgz tar:///home/andrei/.npm/que/0.0.1/package.tgz
+22 silly lockFile ea822fb3-ome-andrei-npm-que-0-0-1-package /home/andrei/.npm/que/0.0.1/package
+23 verbose lock /home/andrei/.npm/que/0.0.1/package /home/andrei/.npm/ea822fb3-ome-andrei-npm-que-0-0-1-package.lock
+24 silly lockFile ea822fb3-ome-andrei-npm-que-0-0-1-package /home/andrei/.npm/que/0.0.1/package
+25 silly lockFile ea822fb3-ome-andrei-npm-que-0-0-1-package /home/andrei/.npm/que/0.0.1/package
+26 silly lockFile 8fdc93b6-home-andrei-code-js-que /home/andrei/code/js/que
+27 silly lockFile 8fdc93b6-home-andrei-code-js-que /home/andrei/code/js/que
+28 error addLocal Could not install /home/andrei/code/js/que
+29 error Error: EACCES, open '/home/andrei/.npm/que/0.0.1/package/package.json'
+29 error  { [Error: EACCES, open '/home/andrei/.npm/que/0.0.1/package/package.json']
+29 error   errno: 3,
+29 error   code: 'EACCES',
+29 error   path: '/home/andrei/.npm/que/0.0.1/package/package.json' }
+30 error Please try running this command again as root/Administrator.
+31 error System Linux 3.13.0-53-generic
+32 error command "/usr/bin/node" "/usr/bin/npm" "install" "/home/andrei/code/js/que"
+33 error cwd /home/andrei/code/python/club/frontend
+34 error node -v v0.10.40
+35 error npm -v 1.4.28
+36 error path /home/andrei/.npm/que/0.0.1/package/package.json
+37 error code EACCES
+38 error errno 3
+39 error stack Error: EACCES, open '/home/andrei/.npm/que/0.0.1/package/package.json'
+40 verbose exit [ 3, true ]
